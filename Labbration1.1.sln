@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labbration1.1", "Labbration1.1\Labbration1.1.csproj", "{84D53B69-9C1B-47B7-A193-D783AE06BA31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entiteter", "Entiteter\Entiteter.csproj", "{4D0C5C26-9D9A-4AE3-B904-1E5E9F360F72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84D53B69-9C1B-47B7-A193-D783AE06BA31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D53B69-9C1B-47B7-A193-D783AE06BA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D53B69-9C1B-47B7-A193-D783AE06BA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D53B69-9C1B-47B7-A193-D783AE06BA31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D0C5C26-9D9A-4AE3-B904-1E5E9F360F72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D0C5C26-9D9A-4AE3-B904-1E5E9F360F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D0C5C26-9D9A-4AE3-B904-1E5E9F360F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D0C5C26-9D9A-4AE3-B904-1E5E9F360F72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59807498-183C-4527-8A5A-8763DA3FEB15}
+	EndGlobalSection
+EndGlobal
