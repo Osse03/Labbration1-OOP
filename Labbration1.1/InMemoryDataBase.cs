@@ -29,11 +29,6 @@ namespace schemasystem_funktionalliet
                
 
             };
-            foreach (var lärare in Lärarer)
-            {
-                Console.WriteLine("ID :{0}  , Name : {1} {2} , E-amil: {3}, Phone: {4}, signatur: {5}",
-                    lärare.LärareID, lärare.FörNamn, lärare.EfterNamn, lärare.Epost, lärare.TelefonNr, lärare.Signatur);
-            }
 
             return Lärarer;
         }
@@ -43,7 +38,6 @@ namespace schemasystem_funktionalliet
             {
 
             };
-
            
             return Schemar;
         }
@@ -65,11 +59,7 @@ namespace schemasystem_funktionalliet
             {
 
             };
-            foreach (var kurs in Kurser)
-            {
-                Console.WriteLine("KursNamn :{0}  , Akronym : {1} ",
-                    kurs.KursNamn, kurs.Akronym);
-            }
+           
             return Kurser;
         }
 
@@ -77,14 +67,10 @@ namespace schemasystem_funktionalliet
         {
             List<Utibildning> Utibildninger = new List<Utibildning>()
             {
+                new Utibildning ("Systemvetare","SSY")
 
             };
 
-            foreach (var utibildning in Utibildninger)
-            {
-                Console.WriteLine("UtbildningsNamn :{0}  , Akronym : {1} , Kurser: {2}",
-                    utibildning.UtbildningsNamn, utibildning.Akronym, utibildning.Kurser);
-            }
             return Utibildninger;
         }
         public List<KursTillfälle> HämtaKursTillfällen()

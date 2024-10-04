@@ -28,7 +28,7 @@ namespace schemasystem_funktionalliet
         }
 
 
-        public static void StartApp(InMemoryDatabase database) // metoden för att starta applikationen
+        public static void StartApp(InMemoryDatabase database) // metoden för att starta console
         {
             List<Lärare> Teachers = LärarList;
 
@@ -121,6 +121,9 @@ namespace schemasystem_funktionalliet
             newSchema.SchemaNamn = Console.ReadLine();
 
             Console.WriteLine($"Schemat {newSchema.SchemaNamn} skapat.");
+            Console.WriteLine("Tryck enter för att fortsätta skapa schemarad :)");
+            Console.ReadKey();
+            Console.Clear();
 
             Console.WriteLine("\n\nAnge namn på kursen: ");
             schemaRad.Kurs.KursNamn = Console.ReadLine();
@@ -149,6 +152,9 @@ namespace schemasystem_funktionalliet
             Console.WriteLine("Ange slut datum för kursTillfället ÅÅÅ-MM-DD ");
             schemaRad.KursTillfäller.SlutPeriod = DateTime.Parse(Console.ReadLine());
 
+            Console.Clear() ;
+            Console.WriteLine($"Schemat {newSchema.SchemaNamn} är skapad med följande information. ");
+            Console.WriteLine($"Schemat {newSchema.SchemaNamn} är skapad med följande information. ");
 
             // spara innehållet av data i listan
             ListOfSchemaRad.Add(schemaRad);
@@ -161,6 +167,12 @@ namespace schemasystem_funktionalliet
         public static void VisaAllaSchema(List<Schema> schemas,List<SchemaRad> schemaRads) // listor med scheman och schemarader
 
         {
+            if(schemas == null || schemaRads == null)
+            {
+
+                Console.WriteLine("Schemat hittades inte");
+            
+            }
 
             foreach (var schema in schemas)
             {
