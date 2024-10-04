@@ -82,8 +82,8 @@ namespace schemasystem_funktionalliet
             while (FortsättKöra)
             {
 
-                Console.WriteLine("Welcome to school system");
-                Console.WriteLine("1. Skapa Schema");
+                Console.WriteLine("\nWelcome to school system");
+                Console.WriteLine("1. Skapa hela Schema");
                 Console.WriteLine("2. Vissa Upp Scehma");
                 Console.WriteLine("3. Avsluta programmet ");
 
@@ -154,7 +154,10 @@ namespace schemasystem_funktionalliet
 
             Console.Clear() ;
             Console.WriteLine($"Schemat {newSchema.SchemaNamn} är skapad med följande information. ");
-            Console.WriteLine($"Schemat {newSchema.SchemaNamn} är skapad med följande information. ");
+            Console.WriteLine($"Kurs: {schemaRad.Kurs.KursNamn}|| Akronym: {schemaRad.Kurs.Akronym} || Moment: {schemaRad.Moment}" +
+                $"\n StartDatum: {schemaRad.StartDatum} || SlutDatum: {schemaRad.SlutDatum} || Lokal: {schemaRad.Lokal.LokalNummer}" +
+                $"\n Kapcitet: {schemaRad.Lokal.Plaster} || Kurstillfälle start: {schemaRad.KursTillfäller.StartPeriod} || Kurstillfälle slut: {schemaRad.KursTillfäller.SlutPeriod}");
+
 
             // spara innehållet av data i listan
             ListOfSchemaRad.Add(schemaRad);
@@ -167,12 +170,6 @@ namespace schemasystem_funktionalliet
         public static void VisaAllaSchema(List<Schema> schemas,List<SchemaRad> schemaRads) // listor med scheman och schemarader
 
         {
-            if(schemas == null || schemaRads == null)
-            {
-
-                Console.WriteLine("Schemat hittades inte");
-            
-            }
 
             foreach (var schema in schemas)
             {
